@@ -1,0 +1,2 @@
+Pour activer l'envoie du message, vous avez 5 minutes avant que le token expire.
+Pour connaitre la position du Kraken, le token doit être envoyé à la page "/start_ais" sur le port UDP 12345.

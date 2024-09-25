@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Contrôle AIS</title>
+    <script src="/static/gestion_login.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+            padding-right: 100px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .status-active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .status-inactive {
+            background-color: #f44336;
+            color: white;
+        }
+        .login-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/login"class="login-link">Login</a>
+        <h1>Système de Contrôle AIS</h1>
+        <p>Bienvenue sur l'interface de contrôle AIS. Voici les derniers navires détectés :</p>
+        <table>
+            <tr>
+                <th>MMSI</th>
+                <th>Nom du Navire</th>
+                <th>Type</th>
+                <th>Position</th>
+                <th>Statut</th>
+            </tr>
+            <tr>
+                <td>123456789</td>
+                <td>Navire Fantôme</td>
+                <td>Cargo</td>
+                <td>48.8566° N, 2.3522° E</td>
+                <td><span class="status status-active">Actif</span></td>
+            </tr>
+            <tr>
+                <td>987654321</td>
+                <td>Le Mérou Conquérant</td>
+                <td>Pêche</td>
+                <td>41.9028° N, 12.4964° E</td>
+                <td><span class="status status-inactive">Inactif</span></td>
+            </tr>
+            <!-- Ajoutez plus de lignes si nécessaire -->
+        </table>
+    </div>
+</body>
+</html>
